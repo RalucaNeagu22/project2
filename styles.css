@@ -1,0 +1,305 @@
+body {
+    background-color: #fafafa;
+    font-family: "Verdana";
+    margin: 0;
+  }
+  
+  /* reset UL margins */
+  ul {
+    list-style-type: none;
+    padding-left: 10px;
+    margin-block: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+  
+  /* List */
+  .list {
+    margin: 20px 0;
+    /* TODO: revizuieste asta */
+  }
+  
+  .list-item {
+    font-size: 20px;
+    font-family: "Verdana";
+    margin-bottom: 10px;
+  }
+  
+  .active {
+    background-color: coral;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #264245;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navbar-item {
+    color: #fafafa;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0 20px;
+  }
+  
+  .brand {
+    margin-right: auto;
+  }
+  /* End of Navbar */
+  
+  /* Header */
+  .banner {
+    height: 70vh;
+    background-image: url("./img/rain-water-green-leaf-macro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .banner-text {
+    color: #fafafa;
+    letter-spacing: -1.5px;
+    text-transform: lowercase;
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+  }
+  /* End of Header */
+  
+  /* Summary */
+  .summary-section {
+    color: #fafafa;
+    font-size: 12px;
+    padding: 50px 150px;
+  }
+  /* End of summary */
+  
+  /* 
+  Helper 
+  - use them as "tools" or reusable tools / classes
+  */
+  .text-center {
+    text-align: center;
+  }
+  
+  .background-dark {
+    background-color: #264245;
+  }
+  
+  .font-smaller{
+    font-size: smaller;
+  }
+  /* End of Helper */
+  
+  /* Cards */
+  .cards-section {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    height: 500px;
+    width: 250px;
+    color: #fafafa;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .card-header {
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+  
+  .card-pricing-image {
+    background-image: url("https://img.freepik.com/free-vector/illustration-label-tag_53876-5901.jpg?w=826&t=st=1696872434~exp=1696873034~hmac=eeb642f82cae8b92e57da55197bda98015fa07180e380a5dff3eb973fea05cb3");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-footer {
+    text-align: center;
+  }
+  /* End of Cards */
+  
+  /* Footer */
+  .footer {
+    color: #fafafa;
+  }
+  
+  .footer-section {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-menu{
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-evenly;
+  }
+  
+  .footer-menu-list > *{
+    margin-bottom: 15px;
+    
+  }
+  
+  .footer-menu-list > * :hover{
+     background-color:#fafafa;
+     color: #264245;
+     border: 1px solid #fafafa;
+     border-radius: 5px;
+     display: flex;
+  }
+  
+  .footer-menu-link{
+    display: flex;
+    border: 1px solid #fafafa;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  /* End of Footer */
+  
+  /* Overview */
+  .overview-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .image {
+    border-radius: 5px;
+    box-shadow: 4px 6px 29px -7px #264245;
+  }
+  
+  .overview-text {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  /* End of Overview */
+  
+  /* Articles */
+  .article-container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .article-title {
+    display: flex;
+    flex-direction: column;
+  }
+   
+  div.article-container:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  
+  .article-heading {
+    order: 1;
+    text-align: center;
+  }
+  
+  .article-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px 0 50px;
+  }
+  /* End of Articles */
+  
+  @media (min-width: 1025px){
+    main {
+      width:1024px;
+      margin: auto;
+    }
+  }
+
+   
+  .navbar > * :hover {
+    background-color:#fafafa;
+     color: #264245;
+     border: 1px solid #fafafa;
+     border-radius: 5px;
+  }
+
+  .banner1 {
+    height: 70vh;
+    background-image: url("./img/rain-water-green-leaf-macro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .banner-text1 {
+    color: #fafafa;
+    letter-spacing: -1.5px;
+    text-transform: lowercase;
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 300px;
+    right: 20px;
+  }
+
+  .about-container{
+    display: flex;
+    margin-top: 35px;
+  }
+
+  .about-description {
+    padding: 0 50px 0 50px;
+  }
+  
+  div.about-container:nth-child(even) {
+    flex-direction: row-reverse;
+   }
+
+   .about-history-containers{
+    display: flex;
+    justify-content: space-between;
+    color: #fafafa
+   }
+
+   .about-history {
+    height: 150px;
+    min-width: 15%;
+   }
+   
+   .about-section{
+    margin-top: 100px;
+   }
+   
+   .quote{
+    margin-top: 150px;
+   }
+
+   .text-right{
+     text-align: right;
+   }
+
+   .summary-section{
+    margin-bottom: 20px;
+   }
